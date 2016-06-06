@@ -56,9 +56,33 @@ namespace RomanNumber.Test
         }
 
         [Test]
+        public void ToRomanNumber_ShouldBeXI_WhenInput11()
+        {
+            Assert.AreEqual("XI", romanNumber.ToRomanNumber(11));
+        }
+
+        [Test]
+        public void ToRomanNumber_ShouldBeXLVII_WhenInput47()
+        {
+            Assert.AreEqual("XLVII", romanNumber.ToRomanNumber(47));
+        }
+
+        [Test]
         public void ToRomanNumber_ShouldBeLXXX_WhenInput80()
         {
             Assert.AreEqual("LXXX", romanNumber.ToRomanNumber(80));
+        }
+
+        [Test]
+        public void ToRomanNumber_ShouldBeXCIX_WhenInput99()
+        {
+            Assert.AreEqual("XCIX", romanNumber.ToRomanNumber(99));
+        }
+
+        [Test]
+        public void ToRomanNumber_ShouldBeCCCXXI_WhenInput321()
+        {
+            Assert.AreEqual("CCCXXI", romanNumber.ToRomanNumber(321));
         }
 
         [Test]
@@ -71,6 +95,24 @@ namespace RomanNumber.Test
         public void ToRomanNumber_ShouldBeMDC_WhenInput1600()
         {
             Assert.AreEqual("MDC", romanNumber.ToRomanNumber(1600));
+        }
+
+        [Test]
+        public void ToRomanNumber_ShouldBeMCMXC_WhenInput1990()
+        {
+            Assert.AreEqual("MCMXC", romanNumber.ToRomanNumber(1990));
+        }
+
+        [Test]
+        public void ToRomanNumber_ShouldBeMMVIII_WhenInput2008()
+        {
+            Assert.AreEqual("MMVIII", romanNumber.ToRomanNumber(2008));
+        }
+
+        [Test]
+        public void ToRomanNumber_ShouldBeMMMM_WhenInput4000()
+        {
+            Assert.AreEqual("MMMM", romanNumber.ToRomanNumber(4000));
         }
     }
 }
